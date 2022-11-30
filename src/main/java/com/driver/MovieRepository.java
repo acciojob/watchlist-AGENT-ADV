@@ -41,8 +41,8 @@ public class MovieRepository
         return map_director.get(name);
     }
 
-    public ArrayList<String> get_movie_bydirector(String director) {
-        ArrayList<String> ans = new ArrayList<>();
+    public List<String> get_movie_bydirector(String director) {
+        List<String> ans = new ArrayList<>();
         for (String s : map_director_movie.keySet()) {
             if (map_director_movie.get(s).equalsIgnoreCase(director))
                 ans.add(s);
@@ -50,8 +50,8 @@ public class MovieRepository
         return ans;
     }
 
-    public ArrayList<String> get_All() {
-        ArrayList<String> list = new ArrayList<>();
+    public List<String> get_All() {
+        List<String> list = new ArrayList<>();
         for (String s : map_movie.keySet())
             list.add(s);
         return list;

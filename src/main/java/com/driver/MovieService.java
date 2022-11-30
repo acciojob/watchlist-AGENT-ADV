@@ -36,11 +36,11 @@ public class MovieService {
         return movieRepository.get_director(name);
     }
 
-    public ArrayList<String> get_movie_by_name(String director) {
+    public List<String> get_movie_by_name(String director) {
         return movieRepository.get_movie_bydirector(director);
     }
 
-    public ArrayList<String> get_All() {
+    public List<String> get_All() {
         return movieRepository.get_All();
     }
 
