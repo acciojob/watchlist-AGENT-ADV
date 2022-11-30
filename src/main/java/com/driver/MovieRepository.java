@@ -2,7 +2,7 @@ package com.driver;
 
         import java.util.*;
 
-        import org.springframework.beans.factory.annotation.Autowired;
+        
         import org.springframework.stereotype.Component;
         import org.springframework.stereotype.Repository;
 
@@ -11,11 +11,7 @@ package com.driver;
 public class MovieRepository
 {
 
-    @Autowired
-    Movie mov;
-
-    @Autowired
-    Director dir;
+    
 
     Map<String, Movie> map_movie = new HashMap<>();
     Map<String, Director> map_director = new HashMap<>();
