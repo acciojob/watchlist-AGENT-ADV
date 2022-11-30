@@ -2,7 +2,7 @@ package com.driver;
 
         import java.util.*;
 
-        
+
         import org.springframework.stereotype.Component;
         import org.springframework.stereotype.Repository;
 
@@ -54,14 +54,18 @@ public class MovieRepository
         return list;
     }
 
-    public void delete(String name) {
+    public void delete(String name)
+    {
         map_director.remove(name);
-        for (String s : map_director_movie.keySet()) {
+        List<String> temp = new ArrayList<>(map_director_movie.keySet());
+        for (String s : temp)
+        {
             if (map_director_movie.get(s).equalsIgnoreCase(name)) {
-                map_movie.remove(s);
                 map_director_movie.remove(s);
+                map_movie.remove(s);
             }
         }
+
     }
 
     public void deleteAll() {
