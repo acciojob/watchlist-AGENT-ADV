@@ -1,8 +1,7 @@
 package com.driver;
 
-import org.springframework.stereotype.Component;
 
-@Component
+
 public class Director
 {
     String name;

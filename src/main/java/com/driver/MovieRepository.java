@@ -1,21 +1,14 @@
 package com.driver;
-
-        import java.util.*;
-
-
-        import org.springframework.stereotype.Component;
-        import org.springframework.stereotype.Repository;
+import java.util.*;
+import org.springframework.stereotype.Repository;
 
 @Repository
-@Component
 public class MovieRepository
 {
 
-    
-
-    Map<String, Movie> map_movie = new HashMap<>();
-    Map<String, Director> map_director = new HashMap<>();
-    Map<String, String> map_director_movie = new HashMap<>();
+    private Map<String, Movie> map_movie = new HashMap<>();
+    private Map<String, Director> map_director = new HashMap<>();
+    private Map<String, String> map_director_movie = new HashMap<>();
 
     public void add_movie(Movie m) {
         map_movie.put(m.getName(), m);

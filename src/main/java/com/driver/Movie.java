@@ -1,8 +1,8 @@
 package com.driver;
 
-import org.springframework.stereotype.Component;
 
-@Component
+
+
 public class Movie
 {
     private String name;
